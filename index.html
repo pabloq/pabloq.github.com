@@ -4,99 +4,251 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
 <style type="text/css">
-body{
-margin:0;
-padding:0;
-line-height: 1.5em;
-}
-b{font-size: 110%;}
-em{color: red;}
-#maincontainer{
-width: 840px; /*Width of main container*/
-margin: 0 auto; /*Center container on page*/
-}
-#topsection{
-background: #EAEAEA;
-height: 90px; /*Height of top section*/
-}
-#topsection h1{
-margin: 0;
-padding-top: 15px;
-}
-#contentwrapper{
-float: left;
-width: 100%;
-}
-#contentcolumn{
-margin-right: 200px; /*Set right margin to RightColumnWidth*/
-}
-#rightcolumn{
-float: left;
-width: 250px; /*Width of right column*/
-margin-left: -250px; /*Set left margin to -(RightColumnWidth) */
-background: #FDE95E;
-}
-#footer{
-clear: left;
-width: 100%;
-background: black;
-color: #FFF;
-text-align: center;
-padding: 4px 0;
-}
-#footer a{
-color: #FFFF80;
-}
-.innertube{
-margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
-margin-top: 0;
-}
-.str{color:#080}.kwd{color:#008}.com{color:#800}.typ{color:#606}.lit{color:#066}.pun{color:#660}.pln{color:#000}.tag{color:#008}.atn{color:#606}.atv{color:#080}.dec{color:#606}pre.prettyprint{padding:2px;border:1px solid #888}@media print{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.pln{color:#000}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}
+
+body {
+    margin:0;
+    padding:0;
+    line-height: 1.5em;
+  }
+
+
+b {
+    font-size: 110%;
+  }
+
+
+em {
+    color: red;
+  }
+
+
+#maincontainer {
+    width: 840px;
+    /*Width of main container*/margin: 0 auto;
+    /*Center container on page*/;
+  }
+
+
+#topsection {
+    background: #EAEAEA;
+    height: 80px;
+    /*Height of top section*/;
+  }
+
+
+#topsection h1 {
+    font-style : normal;
+    margin-bottom : 0;
+    margin-left : 0;
+    margin-right : 0;
+    margin-top : 0;
+    padding-top : 15px;
+    text-align : center;
+  }
+#topsection h2 {
+    font-style : normal;
+    text-align : center;
+  }
+
+#contentwrapper {
+    float: left;
+    width: 100%;
+  }
+
+
+#contentcolumn {
+    margin-right: 200px;
+    /*Set right margin to RightColumnWidth*/;
+  }
+
+
+#rightcolumn {
+    float: left;
+    width: 220px;
+    /*Width of right column*/margin-left: -220px;
+    /*Set left margin to -(RightColumnWidth) */background: #FDE95E;
+  }
+
+
+#footer {
+    clear: left;
+    width: 100%;
+    background: black;
+    color: #FFF;
+    text-align: center;
+    padding: 4px 0;
+  }
+
+
+#footer a {
+    color: #FFFF80;
+  }
+
+
+.innertube {
+    margin: 10px;
+    /*Margins for inner DIV inside each column (to provide padding)*/margin-top: 0;
+  }
+
+
+.str {
+    color:#080;
+  }
+
+
+.kwd {
+    color:#008;
+  }
+
+
+.com {
+    color:#800;
+  }
+
+
+.typ {
+    color:#606;
+  }
+
+
+.lit {
+    color:#066;
+  }
+
+
+.pun {
+    color:#660;
+  }
+
+
+.pln {
+    color:#000;
+  }
+
+
+.tag {
+    color:#008;
+  }
+
+
+.atn {
+    color:#606;
+  }
+
+
+.atv {
+    color:#080;
+  }
+
+
+.dec {
+    color:#606;
+  }
+
+
+pre.prettyprint {
+    padding:2px;
+    border:1px solid #888;
+  }
+
+@media print{.str{color:#060}.kwd{color:#006;font-weight:bold}.com{color:#600;font-style:italic}.typ{color:#404;font-weight:bold}.lit{color:#044}.pun{color:#440}.pln{color:#000}.tag{color:#006;font-weight:bold}.atn{color:#404}.atv{color:#060}}
 </style>
 <script type="text/javascript" src="prettify.js"></script>
 <title>Pablo Quiros</title>
 </head>
 <body onload="prettyPrint()">
 <div id="maincontainer">
-	<div id="topsection">
-		<div class="innertube">
-			<h1>Pablo Quirós</h1>
-		</div>
-	</div>
-		<div id="contentwrapper">
-			<div id="contentcolumn">
-				<div class="innertube">
-					<img src="http://farm4.static.flickr.com/3257/3137424756_113aa9f72d.jpg" width="500" height="412" alt="Pablo Q." /><img /><br />
-					<code class="prettyprint">
+<div id="topsection">
+<div class="innertube">
+<h1>require 'PabloQ.rb'<br /></h1>
+<h2> {Tel:(506) 88 33 76 56 | mail: paqs140482@gmail}</h2>
+</div>
+</div>
+<div id="contentwrapper">
+<div id="contentcolumn">
+<div class="innertube">
+<code class="prettyprint">
 <p>
-require 'pabloq'<br />
 describe PabloQ do<br />
-it 'le cuadra' do<br />
+it 'se parece a' do<br />
+pabloq = PabloQ.new
+pabloq.should ser_igual_a(
+<img src="http://farm4.static.flickr.com/3157/3140971687_847c50f633_m.jpg" width="240" height="182" alt="Pablo Q." /><img />)<br />
 end<br />
-it 'NO le cuadra' do<br />
+it 'le gusta' do<br />
+pabloq.should gustar %{
+programar ruby, musica, trova, rock-latinoamericano, leer, garcia marquez, marxismo...
+}<br />
 end<br />
-it 'Estudió' do<br />
+it 'no le gusta' do<br />
+pabloq.should_not gustar %{
+facismo, .net, football americano, bush, israel, oscar arias, tlc...
+}<br />
+end<br />
+it 'EstudiO' do<br />
+pabloq.should estudio %{
+ing. en computacion en el ITCR (instituto tecnologico de Costa Rica),
+CCNA cisco system,
+egresado del Franco
+}<br />
 end<br />
 it 'Estudia' do<br />
+pabloq.should estudia %{
+filosofia en la UCR,
+Maestria en Computacion ITCR		
+}<br />
 end<br />
 end<br /></p>
-					</code>
-				</div>
-			</div>
-		</div>
-		<div id="rightcolumn">
-			<p class="innertube">
-				<p><b>Twitter:</b> @<a href="http://twitter.com/pabloq">pabloq</a><br /></p>
-				<p><b>Flickr:</b> <a href="http://www.flickr.com/photos/82684024@N00/">fotillas</a><br /></p>
-				<p><b> Blog: </b> <a href="http://pabloquiros.blogspot.com/">Criminal y sus habladas</a>
-				(El blog está un tok viejo, y además no está representa mi parte computina. Trataré de volver a escribir en él)</p>
-				<p><b>mail:</b> paqs140482@gmail.com<br /></p>
-				<p><b>MSN/GTALK:</b> paqs140482@gmail.com<br /></p>
-			</div>
-		</div>
-		<div id="footer">
-		Mátate estudiando y serás un cadáver culto. LES LUTHIERS
-		</div>
+</code>
+</div>
+Finished in 0.019014 seconds<br />
+4 examples, 0 failure<br />
+</div>
+</div>
+<div id="rightcolumn">
+<div class="innertube">
+<p><b><a href="http://github.com/pabloq">Codigo</a></b> <br /></p>
+<p><b><a href="http://www.facebook.com/people/Pablo-Quiros-Solis/654759781">Facebook</a></b> <br /></p>
+<p><b>Twitter:</b> @<a href="http://twitter.com/pabloq">pabloq</a><br /></p>
+<p><b> Blog: </b> <a href="http://pabloquiros.blogspot.com/">Pablo Q.</a>
+(blog politico, literario,  NO de mi lado ingeniero)</p>
+<p><b>MSN/GTALK:</b> paqs140482@gmail.com<br /></p>
+<p><b>Flickr:
+<!-- Start of Flickr Badge -->
+<style type="text/css">
+#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
+#flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
+#flickr_icon_td {padding:0 5px 0 0 !important;}
+.flickr_badge_image {text-align:center !important;}
+.flickr_badge_image img {border: 1px solid black !important;}
+#flickr_badge_uber_wrapper {width:150px;}
+#flickr_www {display:block; text-align:center; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+#flickr_badge_uber_wrapper a:hover,
+#flickr_badge_uber_wrapper a:link,
+#flickr_badge_uber_wrapper a:active,
+#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+#flickr_badge_wrapper {background-color:#FFFF66;border: solid 1px #000000}
+#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+</style>
+<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0"><tr><td><a href="http://www.flickr.com" id="flickr_www">www.<strong style="color:#3993ff">flick<span style="color:#ff1c92">r</span></strong>.com</a><table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
+<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?show_name=1&count=3&display=latest&size=t&layout=v&source=user&user=82684024%40N00"></script>
+<tr>
+<td id="flickr_badge_source" valign="center" align="center">
+<table cellpadding="0" cellspacing="0" border="0"><tr>
+<td width="10" id="flickr_icon_td"><a href="http://www.flickr.com/photos/82684024@N00/"><img id="flickr_badge_icon" alt="Pablo Quiros Solis' items" src="http://farm4.static.flickr.com/3108/buddyicons/82684024@N00.jpg?1223490872#82684024@N00" align="left" width="48" height="48"></a></td>
+<td id="flickr_badge_source_txt"><nobr>Go to</nobr> <a href="http://www.flickr.com/photos/82684024@N00/">Pablo Quiros Solis' photostream</a></td>
+</tr></table>
+</td>
+</tr>
+</table>
+</td></tr></table>
+<!-- End of Flickr Badge -->
+</p>
+</div>
+</div>
+<div id="footer">
+Matate estudiando y seras un cadaver culto. LES LUTHIERS
+</div>
 </div>
 </body>
 </html>
